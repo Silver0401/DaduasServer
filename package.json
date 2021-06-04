@@ -1,0 +1,15 @@
+{
+  "name": "daduasserver",
+  "version": "1.0.0",
+  "description": "Servidor del daduoson",
+  "main": "server.js",
+  "scripts": {
+    "test": "start",
+    "start": "node server.js"
+  },
+  "author": "El shelasfrias",
+  "license": "ISC",
+  "dependencies": {
+    "epxress": "^0.0.1-security"
+  }
+}
