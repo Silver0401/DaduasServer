@@ -7,6 +7,7 @@ const missingList = [12, 23, 34, 45, 56]
 
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html")
+  
 })
 
 
@@ -15,10 +16,16 @@ for (let c = 2; c <= 66; c++){
   else {
     app.get(`/Diapositiva${c}`, (req,res) => {
 
-      res.sendFile(__dirname + `/resources/Diapositiva${c}.jpeg`)
+      res.sendFile(__dirname + `/resources/Diapos1/Diapositiva${c}.jpeg`)
 
     })
   }
+}
+
+for (let c = 1; c <= 60; c++){
+  app.get(`/Diapo${c}`, (req,res) => {
+    res.sendFile(__dirname + `/resources/Diapos2/Diapo${c}.jpeg`)
+  })
 }
 
 
